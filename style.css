@@ -189,6 +189,7 @@ footer {
 
   .computer__text {
     align-self: center;
+    max-width: 70%;
   }
 
   .compter__section {
