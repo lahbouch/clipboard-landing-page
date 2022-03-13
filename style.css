@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 60px 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+main img {
+  width: 100px;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.section__text__heading {
+  font-size: 2rem;
+  color: hsl(210, 10%, 33%);
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.section__text__body {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+.download__btn {
+  margin: 10px;
+}
+
+.download__btn {
+  display: inline-block;
+  text-decoration: none;
+
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.download__btn--green {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 5px 0px hsl(171, 59%, 30%);
+}
+
+.download__btn--purple {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 5px 0px hsl(233, 41%, 43%);
+}
+
+.first__section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section__items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+
+.item__heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 50px;
+  color: hsl(210, 10%, 33%);
+}
+
+.item__desc {
+  line-height: 30px;
+  color: hsl(201, 11%, 66%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.second__section {
+  display: flex;
+  flex-direction: inherit;
+  gap: 50px;
+}
+
+.section__items ul li:first-child {
+  margin-bottom: 20px;
+}
+.second__section img {
+  filter: drop-shadow(10px 0px 10px hsl(0, 0%, 50%, 25%));
+}
+.third__section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.partners__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.partners__section img {
+  width: 110px;
+}
+
+.download__section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer {
+  background-color: hsl(201, 11%, 66%, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 60px;
+  margin-top: 130px;
+}
+.footer__img {
+  width: 70px;
+}
+.footer__list {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 25px;
+
+  align-items: center;
+  color: hsl(210, 10%, 33%);
+}
+.footer__social {
+  display: inherit;
+  align-items: center;
+  font-weight: 500;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  .container {
+    padding: 150px 30px 0;
+  }
+
+  .computer__text {
+    align-self: center;
+  }
+
+  .compter__section {
+    flex-direction: row;
+  }
+
+  .computer__items {
+    text-align: left;
+    max-width: 500px;
+    padding: 0 30px 0 30px;
+  }
+
+  .computer__img {
+    width: 60%;
+    height: auto;
+    margin-left: -100px;
+  }
+
+  .download {
+    display: flex;
+    width: 50%;
+  }
+  .download__btn {
+    display: block;
+  }
+
+  /**/
+  .second__section {
+    align-items: center;
+  }
+
+  .second__section img {
+    width: 600px;
+    height: auto;
+  }
+
+  .secion__items--fourth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .partners__section {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    height: auto;
+  }
+
+  .forth__section--list {
+    max-width: 400px;
+  }
+
+  .download__section {
+    align-items: center;
+    height: 40vh;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1rem;
+  }
+
+  .footer__social {
+    position: absolute;
+    right: 10%;
+    gap: 35px;
+  }
+
+  .download__btn:hover {
+    filter: brightness(120%);
+  }
+
+  .footer__list li a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+
+  .footer__social li a svg path:hover {
+    fill: hsl(171, 66%, 44%);
+  }
+}
