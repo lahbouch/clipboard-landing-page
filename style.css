@@ -178,6 +178,17 @@ footer {
   font-weight: 500;
   gap: 40px;
 }
+.download__btn:hover {
+  filter: brightness(120%);
+}
+
+.footer__list li a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.footer__social li a svg path:hover {
+  fill: hsl(171, 66%, 44%);
+}
 @media screen and (min-width: 768px) {
   body {
     background-image: url(./images/bg-header-desktop.png);
@@ -267,15 +278,5 @@ footer {
     gap: 35px;
   }
 
-  .download__btn:hover {
-    filter: brightness(120%);
-  }
-
-  .footer__list li a:hover {
-    color: hsl(171, 66%, 44%);
-  }
-
-  .footer__social li a svg path:hover {
-    fill: hsl(171, 66%, 44%);
-  }
+  
 }
